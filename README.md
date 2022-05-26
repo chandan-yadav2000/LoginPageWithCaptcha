@@ -13,6 +13,9 @@ In case you are directly adding in the application then you have to add MSCaptch
 Step 2:- Add the Changes in the web.config file
 ```
 <system.web>
+      <httpHandlers>
+      <add verb="GET" path="CaptchaImage.axd" type="MSCaptcha.CaptchaImageHandler, MSCaptcha" />
+     </httpHandlers>
 		<!--Change the authentication mode or always add the authentication mode in Windows-->
 		<authentication mode="Windows"/>
 	</system.web>
