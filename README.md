@@ -24,6 +24,7 @@ Step 2:- Add the Changes in the web.config file
 <system.webServer>
 		<handlers>
 			<add name="captcha1" verb="GET" path="CaptchaImage.axd" type="MSCaptcha.CaptchaImageHandler, MSCaptcha" preCondition="integratedMode,runtimeVersionv2.0"/>
+	<add name="MSCaptcha" verb="GET" path="CaptchaImage.axd" type="MSCaptcha.CaptchaImageHandler, MSCaptcha" resourceType="Unspecified"/>
 		</handlers>
 	</system.webServer>
 ```
